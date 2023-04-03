@@ -1,0 +1,12 @@
+<div class="profile">
+  <h1>Your Profile</h1>
+  <div class="post-form">
+    <textarea [(ngModel)]="postText" placeholder="What's on your mind?"></textarea>
+    <button (click)="createPost()">Post</button>
+  </div>
+  <div class="posts">
+    <div *ngFor="let post of posts" class="post">
+      <p>{{ post }}</p>
+    </div>
+  </div>
+</div>
